@@ -1,0 +1,87 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "login": "json-server",
+      "password": "typicode"
+    }
+  ],
+  "Produit": [
+    {
+      "id": "123 some comment to ali",
+      "nom": "123 some comment to ali",
+      "description": "123 some comment to ali",
+      "prix": "123 some comment to ali",
+      "categorie": "123 some comment to ali",
+      "photo": "123 some comment to ali",
+      "disponibilite": "123 some comment to ali",
+      "remise": 0
+    }
+  ],
+  "Commande": [
+    {
+      "id": "123 some comment to ali",
+      "nom": "123 some comment to ali",
+      "prenom": "123 some comment to ali",
+      "numTel": "123 some comment to ali",
+      "adresse": "123 some comment to ali",
+      "info": "123 some comment to ali",
+      "ville": "123 some comment to ali",
+      "listeProduit": [
+        1,
+        2,
+        3
+      ],
+      "listeQuantite": [
+        1,
+        2,
+        3
+      ]
+    },
+    [
+      {
+        "id": "123 some comment to ali"
+      }
+    ],
+    [
+      {
+        "id": "1"
+      }
+    ],
+    {
+      "nom": "69",
+      "id": "BqlE62p"
+    },
+    {
+      "nom": "69",
+      "id": "Xu7ua4u"
+    },
+    {
+      "nom": "69",
+      "id": "OXP4rKE"
+    },
+    {
+      "nom": "69",
+      "id": "77AePTC"
+    },
+    {
+      "nom": "69",
+      "id": "6o9_Duw"
+    }
+  ],
+  "Panier": [
+    {
+      "id": "123 some comment to ali",
+      "listeProduit": [
+        1,
+        2,
+        3
+      ],
+      "listeQuantite": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}
