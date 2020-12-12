@@ -1,13 +1,15 @@
+import {Produit} from './Produit';
+
 export class Commande{
   id: number;
-  private listeProduit: number[];
-  private listeQuantite: number[];
+   listeProduit: Produit[];
+   listeQuantite: number[];
   nom: string;
-  private prenom: string;
-  private numTel: number;
-  private ville: string;
-  private adresse: string;
-  private info: string;
+   prenom: string;
+   numTel: number;
+   ville: string;
+   adresse: string;
+   info: string;
 
   constructor() {
   }

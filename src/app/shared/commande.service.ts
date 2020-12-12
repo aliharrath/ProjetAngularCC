@@ -16,14 +16,14 @@ export class CommandeService {
     return this.http.get<Commande[]>('http://localhost:3000/Commande');
   }
 
-  addCommande(){
-    this.c = new Commande();
-    this.c.nom = '69' ;
-    console.log(this.c);
-    return this.http.post<Commande>('http://localhost:3000/Commande', this.c);
+  addCommande(cmd: Commande){
+    return this.http.post<Commande>('http://localhost:3000/Commande', cmd);
   }
-  deleteCommande(){
-    return this.http.delete<Commande>('http://localhost:3000/Commande/DK9tOMK');
+  deleteCommande(id){
+    return this.http.delete<Commande>('http://localhost:3000/Commande/' + id);
+  }
+  UpdateCommande(c){
+    return this.http.put<Commande>('http://localhost:3000/Commande/' + this.c.id , this.c);
   }
 }
 

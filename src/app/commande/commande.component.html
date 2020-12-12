@@ -1,2 +1,22 @@
-<p>commande works!</p>
-<h1 *ngFor="let i of Allcommande">kjh</h1><br>
+<div class="container mt-5" >
+
+<div class="card">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <input type="text" placeholder="Votre Nom...." class="form-control " name="nom" [(ngModel)]="commande.nom" >
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <input type="text" placeholder="Prenom...." class="form-control" name="prenom" [(ngModel)]="commande.prenom">
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <input type="number" placeholder="Numtel...." class="form-control" name="numtel" [(ngModel)]="commande.numTel" >
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <input type="text" placeholder="adresse...." class="form-control " name="adresse" [(ngModel)]="commande.adresse" >
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <input type="text" placeholder="ville...." class="form-control" name="ville" [(ngModel)]="commande.ville" >
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <input type="text" placeholder="informations supplimentaires...." class="form-control" name="info" [(ngModel)]="commande.info" >
+    <a  class="btn btn-primary" (click)="AjoutCommande()" >Go somewhere</a>
+  </div>
+</div>
+</div>

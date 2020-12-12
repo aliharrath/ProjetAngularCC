@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card mt-5">
+    <div class="card-header">Details Du Produit</div>
+    <div class="card-body">
+      <h5 class="card-title">{{P.nom}}</h5>
+      <p class="card-text">{{P.description}}</p>
+      <div><img src="{{P.photo}}" style="height: 400px; width: 350px"></div>
+      <a class="btn btn-primary" (click)="ajouterProduitPanier(P.id)">Ajouter au panier !</a>
+    </div>
+  </div>
+</div>
