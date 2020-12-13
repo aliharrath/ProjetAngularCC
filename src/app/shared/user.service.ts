@@ -16,4 +16,8 @@ export class UserService {
       (data) => { if (data[0].login === login && data[0].password === password)
       {this.currentUser = data[0]; this.router.navigate(['produit']); } });
   }
+  logUserOut(): void{
+    this.currentUser = null ;
+    this.router.navigate(['']);
+  }
 }

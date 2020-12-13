@@ -5,7 +5,7 @@
       <div class="card-body">
         <h5 class="card-title">{{i.nom}}</h5>
         <p class="card-text">{{i.description}}</p>
-        <h6 class="card-title">Price(TND): {{i.prix}}</h6>
+        <h6 class="card-title">Prix(TND): {{i.prix}}</h6>
         <div class="d-flex justify-content-around">
           <a routerLink="/produit/{{i.id}}" routerLinkActive="active" class="btn btn-outline-info" >View Product</a>
           <a class="btn btn-danger" (click)="ajouterProduitPanier(i.id)">Add To Cart</a>

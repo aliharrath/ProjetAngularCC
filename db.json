@@ -13,73 +13,52 @@
   ],
   "Produit": [
     {
-      "id": "123 some comment to ali",
-      "nom": "123 some comment to ali",
-      "description": "123 some comment to ali",
-      "prix": "123 some comment to ali",
-      "categorie": "123 some comment to ali",
-      "photo": "assets/p1.jpg",
-      "disponibilite": "123 some comment to ali"
+      "id": "A22",
+      "nom": "Adidas Kampung",
+      "description": "Disponible en rouge / bleue / blanc",
+      "prix": "231",
+      "categorie": "Adidas",
+      "photo": "assets/p2.jpg",
+      "disponibilite": true
     },
     {
       "id": "ONuqJSV",
-      "nom": "please",
-      "prix": "45",
-      "description": "azeazefff",
-      "categorie": "1",
+      "nom": "Converse",
+      "prix": "72",
+      "description": "Disponible seulement en noir",
+      "categorie": "Converse",
       "photo": "assets/p1.jpg",
-      "disponibilite": "1"
+      "disponibilite": true
     },
     {
       "id": "ONuqJSF",
-      "nom": "please",
-      "prix": "45",
-      "description": "azeazefff",
-      "categorie": "1",
+      "nom": "Nike Sp",
+      "prix": "190",
+      "description": "Disponible en rouge / bleue / blanc",
+      "categorie": "Nike",
       "photo": "assets/p1.jpg",
-      "disponibilite": "1"
+      "disponibilite": true
     },
     {
       "id": "ONuqXSV",
-      "nom": "please",
+      "nom": "Peak Lk",
       "prix": "45",
-      "description": "azeazefff",
-      "categorie": "1",
+      "description": "Edition limité",
+      "categorie": "Peak",
+      "photo": "assets/p2.jpg",
+      "disponibilite": true
+    },
+    {
+      "id": "ONuqXSVE",
+      "nom": "Celio LI",
+      "prix": "425",
+      "description": "Edition limité",
+      "categorie": "Celio",
       "photo": "assets/p1.jpg",
-      "disponibilite": "1"
+      "disponibilite": false
     }
   ],
   "Commande": [
-    {
-      "id": "123 some comment to ali",
-      "nom": "123 some comment to ali",
-      "prenom": "123 some comment to ali",
-      "numTel": "123 some comment to ali",
-      "adresse": "123 some comment to ali",
-      "info": "123 some comment to ali",
-      "ville": "123 some comment to ali",
-      "listeProduit": [
-        1,
-        2,
-        3
-      ],
-      "listeQuantite": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "id": "5e_Ue2M",
-      "nom": "harrath",
-      "prenom": "ali",
-      "numTel": "978",
-      "adresse": "20 rue d'irak la soukra ariana",
-      "info": "baaaa",
-      "ville": "Ariana",
-      "listeProduit": null,
-      "listeQuantite": null
-    },
     {
       "nom": "harrath",
       "prenom": "ali",
@@ -112,6 +91,52 @@
         3
       ],
       "id": "qscsYtD"
+    },
+    {
+      "nom": "ali",
+      "prenom": "ali",
+      "numTel": 20145,
+      "adresse": "20 rue d'irak la soukra ariana",
+      "ville": "zazaz",
+      "info": "zaeazeazeazeazeuayzeuiazyuayiuuayazeiuyazeiuayze",
+      "listeProduit": [
+        {
+          "id": "ONuqJSF",
+          "nom": "Nike Sp",
+          "prix": "190",
+          "description": "Disponible en rouge / bleue / blanc",
+          "categorie": "Nike",
+          "photo": "assets/p1.jpg",
+          "disponibilite": true
+        }
+      ],
+      "listeQuantite": [
+        2
+      ],
+      "id": "t4t-4dQ"
+    },
+    {
+      "nom": "ali",
+      "prenom": "ezrzerz",
+      "numTel": 124555,
+      "adresse": "azezeaea zazeazes",
+      "ville": "ariana",
+      "info": "azeazejjjsuuazejjazeuazejzauj",
+      "listeProduit": [
+        {
+          "id": "ONuqXSV",
+          "nom": "Peak Lk",
+          "prix": "45",
+          "description": "Edition limité",
+          "categorie": "Peak",
+          "photo": "assets/p2.jpg",
+          "disponibilite": true
+        }
+      ],
+      "listeQuantite": [
+        4
+      ],
+      "id": "Md_L3_C"
     }
   ],
   "Panier": [
@@ -120,26 +145,26 @@
       "listeProduit": [
         {
           "id": "ONuqJSV",
-          "nom": "please",
-          "prix": "45",
-          "description": "azeazeff",
-          "categorie": "1",
+          "nom": "Converse",
+          "prix": "72",
+          "description": "Disponible seulement en noir",
+          "categorie": "Converse",
           "photo": "assets/p1.jpg",
-          "disponibilite": "1"
+          "disponibilite": true
         },
         {
-          "id": "ONuqJSF",
-          "nom": "please",
-          "prix": "45",
-          "description": "azeazefff",
-          "categorie": "1",
-          "photo": "assets/p1.jpg",
-          "disponibilite": "1"
+          "id": "A22",
+          "nom": "Adidas Kampung",
+          "description": "Disponible en rouge / bleue / blanc",
+          "prix": "231",
+          "categorie": "Adidas",
+          "photo": "assets/p2.jpg",
+          "disponibilite": true
         }
       ],
       "listeQuantite": [
         1,
-        3
+        8
       ]
     }
   ]

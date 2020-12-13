@@ -25,5 +25,8 @@ export class DetailproduitComponent implements OnInit {
   ajouterProduitPanier(idProduit: string): void{
     this.PS.ajouterProduitAuPanier(idProduit);
   }
+  enstock(): boolean{
+    return   this.P.disponibilite !== false ;
+  }
   }
 

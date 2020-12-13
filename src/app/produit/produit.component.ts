@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ProduitService} from '../shared/produit.service';
 import {Produit} from '../model/Produit';
+import {UserService} from '../shared/user.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-produit',
@@ -10,29 +12,13 @@ import {Produit} from '../model/Produit';
 export class ProduitComponent implements OnInit {
   p: Produit[];
 
-  constructor(private PS: ProduitService) { }
+  constructor(private PS: ProduitService, private US: UserService, private router: Router) { }
 
   ngOnInit(): void {
+    if (this.US.currentUser === null) {
+      this.router.navigate(['']);
+    }
     this.PS.getlisteProduit().subscribe(d => this.p = d);
-  }
-  addNewProduct(form){
-    console.log(form.value);
-
-    let nvProduit = {
-      id: '',
-      nom: form.value.nomproduit,
-      prix: form.value.Prixproduit,
-      description: form.value.descriptionP,
-      categorie: form.value.categorieP,
-      photo: form.value.photoP,
-      disponibilite: form.value.disponibiliteP,
-    };
-
-    console.log(nvProduit);
-
-    this.PS.createProduct(nvProduit).subscribe(data => {
-      console.log(data);
-    });
     }
   ajouterProduitPanier(idProduit: string): void{
     this.PS.ajouterProduitAuPanier(idProduit);

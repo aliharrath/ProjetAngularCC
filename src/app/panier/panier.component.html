@@ -19,7 +19,7 @@
       <td>{{i.prix}}</td>
       <td><input type="number" placeholder="Quantité..." name="kh" [(ngModel)]="panier.listeQuantite[getQuantite(i.id)]"
                  (keyup)="updateQuantite(i.id, panier.listeQuantite[getQuantite(i.id)])"></td>
-      <td>{{i.photo}}</td>
+      <td> <img src=" {{i.photo}}"  style="width: 5rem;"></td>
       <td><input type="submit" class="btn btn-outline-danger" value="Supprimer" (click)="supprimerProduit(i.id)"></td>
     </tr>
     </tbody>
